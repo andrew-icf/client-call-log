@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+.newPatient {
+  width: 20vw;
+  height: 20vh;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+}

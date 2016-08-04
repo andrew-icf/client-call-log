@@ -1,2 +1,9 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<form action="/login" method="post">
+  <label for="username">Username</label>
+  <input type="text" id="username" name="username" required>
+  <label for="password">Password</label>
+  <input type="text" id="password" name="password" required>
+  <a href="/newCall"><button type="button" name="button">Sign in</button></a>
+</form>
