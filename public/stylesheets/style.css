@@ -17,11 +17,45 @@ a {
 }
 .referral {
   width: 20vw;
-  height: 30vh;
+  height: 19vh;
   display: inline-block;
   float: left;
+  cursor: pointer;
 }
 .type{
   width: 30vw;
   height: 30vh;
+}
+.select {
+  display: none;
+}
+.selectTv {
+  display: none;
+}
+.selectRef {
+  display: none;
+}
+.selectOther {
+  display: none;
+}
+.top {
+  margin-top: 5%;
+}
+.yes {
+  display: none;
+}
+.no {
+  display: none;
+}
+.text1 {
+  display: none;
+}
+.text2 {
+  display: none;
+}
+.text3 {
+  display: none;
+}
+.text4 {
+  display: none;
 }

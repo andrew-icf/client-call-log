@@ -1,7 +1,9 @@
 <h1>Appointment Scheduled?</h1>
 <section>
-  <h3>Yes</h3>
-  <h3>No</h3>
+  <h3 id="yes">Yes</h3>
+  <h3 id="no">No</h3>
+</section>
+<section class="yes">
   <h3>Refferral Required?</h3>
   <p>No</p>
   <p>Yes</p>
@@ -10,8 +12,9 @@
   <p>Appt. Date: <input type="text" name="name"></p>
   <label for="notes">Notes</label><br>
   <textarea name="notes" rows="8" cols="40"></textarea>
+  <a class="done" href="/"><button type="button" name="button">Done</button></a>
 </section>
-<section>
+<section class="no">
   <p>Insurance Issue</p>
   <input type="text" name="name">
   <p>Other</p>
@@ -23,5 +26,5 @@
   <input type="text" name="name">
   <label for="notes">Notes</label><br>
   <textarea name="notes" rows="8" cols="40"></textarea>
+  <a class="done" href="/"><button type="button" name="button">Done</button></a>
 </section>
-<a href="/"><button type="button" name="button">Done</button></a>
