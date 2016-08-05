@@ -1,0 +1,51 @@
+<div ng-controller="NewPatientController">
+  <h1>New Patient</h1>
+  <h2>How did you hear about us?</h2>
+  <section id="tv" class="referral">
+    <h3>TV</h3>
+    <select id="showText" class="select">
+      <option>Ch. 3<option>
+      <option>Ch. 5<option>
+      <option>Ch. 10<option>
+      <option>Ch. 15<option>
+      <option>KMSB<option>
+      <option>KOLD<option>
+      <option value="1" >Other<option>
+        <input class="text1" type="text" name="other">
+    </select>
+  </section>
+  <section id="newsP" class="referral">
+    <h3>Newspaper</h3>
+    <select id="showNewsP"class="selectTv">
+      <option>Phoenix<option>
+      <option>Tuscon<option>
+      <option value="1" >Other<option>
+        <input class="text2" type="text" name="other">
+    </select>
+  </section>
+  <section  id="referral" class="referral">
+    <h3>Referral</h3>
+    <select id="showName"class="selectRef">
+      <option>---</option>
+      <option value="1" >Name<option>
+        <input class="text3" type="text" name="other">
+    </select>
+  </section>
+  <section id="other" class="referral">
+    <h3>Other</h3>
+    <select id="showOth" class="selectOther">
+      <option>---</option>
+      <option value="1" >Other<option>
+        <input class="text4" type="text" name="other">
+    </select>
+  </section>
+  <section class="type">
+    <h3>Insurance Type?</h3>
+    <input type="text" name="name" ><br>
+  </section>
+  <section class="top">
+    <label for="notes">Notes</label><br>
+    <textarea name="notes" rows="8" cols="40"></textarea>
+  </section>
+  <a href="#/appSched"><button type="button" name="button">Next</button></a>
+</div>
