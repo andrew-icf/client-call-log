@@ -1,9 +1,10 @@
 <div ng-controller="NewCallController">
   <h1>New Call</h1>
-  <h3>Current Date and Time:<span id="date" data-date="moment().format("MMMM DD YYYY, h:mm:ss a")";></span></h3>
+  <h3>Current Date: {{ date | date:'MMM d, y'}}</h3>
+  <h3>Current Time: {{ date | date:'h:mm a'}}</h3>
   <form action="index.html" method="post">
     <label for="name">Name</label>
-    <input type="text" id="name" name="name">
+    <input type="text" id="name" name="name"><br>
     <label for="number">Number</label>
     <input type="text" id="number" name="number">
   </form>

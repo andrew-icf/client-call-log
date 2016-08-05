@@ -2,9 +2,9 @@
   <h1>Login</h1>
   <form>
     <label for="username">Username</label>
-    <input type="text" name="username">
+    <input type="text" name="username" ng-model="user.username" >
     <label for="password">Password</label>
-    <input type="password" name="password">
-    <a href="#/newCall"><button type="submit" name="Login">Sign in</button></a>
+    <input type="password" name="password" ng-model="user.password" >
+    <a href="#/newCall"><input type="submit" name="Login"></a>
   </form>
 </div>

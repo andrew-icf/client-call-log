@@ -1,17 +1,17 @@
 <div ng-controller="OtherController">
   <h1>Other</h1>
   <h3>Please select one of the following -</h3>
-  <section class="referral">
+  <section class="referral" ng-click="blue()" ng-class="{'active' : active == true}">
     <h3 class="blue">Medical</h3>
   </section>
-  <section class="referral">
+  <section class="referral" ng-click="blue1()" ng-class="{'active1' : active1 == true}">
     <h3 class="blue">Marketing</h3>
   </section>
-  <section class="referral">
+  <section class="referral" ng-click="blue2()" ng-class="{'active2' : active2 == true}">
     <h3 class="blue">Billing</h3>
   </section>
-  <section class="referral">
-    <h3 class="blue">Unknown</h3>
+  <section class="referral" ng-click="blue3()" ng-class="{'active3' : active3 == true}">
+    <h3 class="blue">Unknown</h3><br>
   </section>
   <section class="type">
     <input type="text" name="name" placeholder="Give input" >
@@ -20,5 +20,5 @@
     <label for="notes">Notes</label><br>
     <textarea name="notes" rows="8" cols="40"></textarea>
   </section>
-  <a class="done" href="/"><button type="button" name="button">Done</button></a>
+  <a ng-click="done()" href="/"><button type="button" name="button">Done</button></a>
 </div>

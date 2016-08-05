@@ -1,43 +1,53 @@
 <div ng-controller="NewPatientController">
   <h1>New Patient</h1>
   <h2>How did you hear about us?</h2>
-  <section id="tv" class="referral">
-    <h3>TV</h3>
-    <select id="showText" class="select">
-      <option>Ch. 3<option>
-      <option>Ch. 5<option>
-      <option>Ch. 10<option>
-      <option>Ch. 15<option>
-      <option>KMSB<option>
-      <option>KOLD<option>
-      <option value="1" >Other<option>
-        <input class="text1" type="text" name="other">
-    </select>
+  <section ng-click="showIt()" id="tv" class="referral">
+    <h3 >TV</h3>
+    <section ng-show="dropDown.showDropDown">
+      <select id="showText" class="select" ng-model="selected">
+        <option>---</option>
+        <option>Ch. 3<option>
+        <option>Ch. 5<option>
+        <option>Ch. 10<option>
+        <option>Ch. 15<option>
+        <option>KMSB<option>
+        <option>KOLD<option>
+        <option>Other<option>
+          <input type="text" name="other" value="{{selected}}">
+        </select>
+    </section>
   </section>
-  <section id="newsP" class="referral">
+  <section id="newsP" class="referral" ng-click="showIt1()">
     <h3>Newspaper</h3>
-    <select id="showNewsP"class="selectTv">
-      <option>Phoenix<option>
-      <option>Tuscon<option>
-      <option value="1" >Other<option>
-        <input class="text2" type="text" name="other">
-    </select>
+    <section ng-show="dropDown.showDropDown1">
+      <select id="showNewsP" class="selectTv" ng-model="selected1">
+        <option>---</option>
+        <option>Phoenix<option>
+        <option>Tuscon<option>
+        <option>Other<option>
+          <input type="text" name="other" value="{{selected1}}">
+      </select>
+    </section>
   </section>
-  <section  id="referral" class="referral">
+  <section ng-click="showIt2()" id="referral" class="referral">
     <h3>Referral</h3>
-    <select id="showName"class="selectRef">
-      <option>---</option>
-      <option value="1" >Name<option>
-        <input class="text3" type="text" name="other">
-    </select>
+    <section ng-show="dropDown.showDropDown2">
+      <select id="showName"class="selectRef" ng-model="selected2">
+        <option>---</option>
+        <option>Name<option>
+          <input type="text" name="other" value="{{selected2}}">
+      </select>
+    </section>
   </section>
-  <section id="other" class="referral">
+  <section id="other" class="referral" ng-click="showIt3()">
     <h3>Other</h3>
-    <select id="showOth" class="selectOther">
-      <option>---</option>
-      <option value="1" >Other<option>
-        <input class="text4" type="text" name="other">
-    </select>
+    <section ng-show="dropDown.showDropDown3">
+      <select id="showOth" class="selectOther" ng-model="selected3">
+        <option>---</option>
+        <option>Other<option>
+          <input type="text" name="other" value="{{selected3}}">
+        </select>
+    </section>
   </section>
   <section class="type">
     <h3>Insurance Type?</h3>

@@ -1,0 +1,56 @@
+body {
+  background-color: hsl(330, 0%, 55%);
+}
+
+.newPatient {
+  width: 24vw;
+  height: 24vh;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 2vh;
+  float: left;
+  margin: 5vh 5vw 0 2vw;
+}
+
+input {
+  margin-bottom: 1vh;
+}
+
+.referral {
+  border: 2px solid #000;
+  width: 20vw;
+  min-height: 10vh;
+  text-align: center;
+  border-radius: 30%;
+  float: left;
+  margin-right: 3vw;
+  cursor: pointer;
+}
+
+.yuppers {
+  border: 2px solid #000;
+  width: 10vw;
+  float: left;
+  border-radius: 30%;
+  margin: 0 3vw;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active {
+  color: blue;
+  border: 3px solid blue;
+}
+.active1 {
+  color: blue;
+  border: 3px solid blue;
+}
+.active2 {
+  color: blue;
+  border: 3px solid blue;
+}
+.active3 {
+  color: blue;
+  border: 3px solid blue;
+}
